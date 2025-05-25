@@ -195,37 +195,7 @@ const ContactForm: React.FC = () => {
             </p>
           )}
         </div>
-        
-        {/* File upload */}
-        <div className="mb-8">
-          <label className="block text-gray-700 mb-2">
-            {language === 'fr' ? "Pièce jointe (optionnel)" : "Attachment (optional)"}
-          </label>
-          <div className="flex">
-            <label className="cursor-pointer btn btn-outline flex items-center">
-              <Paperclip size={18} className="mr-2" />
-              {language === 'fr' ? "Choisir un fichier" : "Choose a file"}
-              <input
-                type="file"
-                className="hidden"
-                {...register('attachment')}
-                onChange={handleFileChange}
-              />
-            </label>
-            {fileName && (
-              <span className="ml-3 inline-flex items-center text-sm text-gray-600">
-                {fileName}
-              </span>
-            )}
-          </div>
-          <p className="mt-2 text-xs text-gray-500">
-            {language === 'fr' 
-              ? "Formats acceptés : PDF, DOCX, JPG, PNG. Max 5MB."
-              : "Accepted formats: PDF, DOCX, JPG, PNG. Max 5MB."
-            }
-          </p>
-        </div>
-        
+                
         {/* Submit button */}
         <button
           type="submit"
