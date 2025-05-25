@@ -29,11 +29,6 @@ const ContactPage: React.FC = () => {
       details: 'contact@dazzleconsulting.fr',
     },
     {
-      icon: <Phone size={20} className="text-teal" />,
-      title: language === 'fr' ? 'Téléphone' : 'Phone',
-      details: '+33 6 02 56 78 72',
-    },
-    {
       icon: <MapPin size={20} className="text-teal" />,
       title: language === 'fr' ? 'Adresse' : 'Address',
       details: '123 Avenue des Champs-Élysées, 75008 Paris, France',
